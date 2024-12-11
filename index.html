@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>SU FORM</title>
+    <script src="validation.js" ></script> <!-- Link to external JavaScript file -->
+</head>
+<body bgcolor="pink">
+    <form name="suForm" onsubmit="return validateForm()" method="POST">
+        <p>NAME:</p>
+        <input type="text" id="name" name="Username" placeholder="Enter your Username:">
+
+
+        <p>ID:</p>
+        <input type="text" id="id" name="ID" placeholder="Enter your ID (3 digits):">
+
+
+        <p>PHONE NUMBER:</p>
+        <input type="text" id="phone" name="Phone" placeholder="Enter your Phone Number:">
+
+
+        <p>EMAIL:</p>
+        <input type="text" id="email" name="Email" placeholder="Enter your Email:">
+
+
+        <p>SUBJECT:</p>
+        <input type="text" name="Subject" placeholder="Enter your subject:">
+
+
+        <p>ADDRESS:</p>
+        <textarea name="address" id="address" rows="5" cols="20" placeholder="Enter your address here:"></textarea>
+
+
+        <p>CITY:</p>
+        <select name="City">
+            <option value="surat">Surat</option>
+            <option value="rajkot">Rajkot</option>
+        </select>
+
+
+        <p>PASSWORD:</p>
+        <input type="password" id="password" name="Password" placeholder="Enter your password:">
+
+
+        <p>GENDER:</p>
+        <input type="radio" name="gender" value="male"> MALE<br>
+        <input type="radio" name="gender" value="female"> FEMALE<br>
+
+
+        <p>HOBBIES:</p>
+        <input type="checkbox" name="Hobbies" value="drawing"> Drawing<br>
+        <input type="checkbox" name="Hobbies" value="singing"> Singing<br>
+        <input type="checkbox" name="Hobbies" value="reading"> Reading<br>
+        <input type="checkbox" name="Hobbies" value="cooking"> Cooking<br>
+
+
+        <p>SUBMIT:</p>
+        <input type="submit" value="Submit">
+
+
+        <p>RESET:</p>
+        <input type="reset" value="Reset" onclick="return confirm('Are you sure you want to reset the form?')">
+    </form>
+</body>
+</html>
